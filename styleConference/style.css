@@ -1,0 +1,125 @@
+*{
+margin:0px;
+padding:0px
+}
+body{
+    background-color: #293f50;
+    color: #888;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+:root{
+    --primary-color:#50C878;
+    --secondary-color: #808080;
+}
+/* from style conference to register style start fromhere  */
+.style-conference{
+    background-color:#293f50;
+}
+.left-right{
+    display: flex;
+    justify-content: space-around;;
+}
+
+.left-style{
+    font-size: 50px;
+    color: var(--secondary-color);
+}
+.left-style > h1{
+    text-transform: uppercase;
+    padding-top: 50px;
+    font-weight: 100;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-top: 5px solid #50C878;
+}
+.right-info > .top-info {
+    color: var(--primary-color);
+    text-align: right;
+    padding-top: 145px;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.right-info > .bottom-nav > ul {
+    display: flex;
+    list-style-type: none;
+    gap:30px;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+.right-info > .bottom-nav > ul > li > a{
+    color: #ffff;
+    text-decoration: none;
+}
+.right-info > .bottom-nav > ul > li > a:hover{
+    color: gray;
+}
+.middle-text{
+    text-align: center;
+    margin: 50PX 100px 50px 100px;
+    line-height: 1.2;
+}
+.middle-text > h1 {
+    color:var(--primary-color);
+    font-size:50px;
+}
+.middle-text > p{
+    line-height:2;
+    font-size: 25px;
+}
+.middle-text  > #register{
+    display: inline-block;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    border: 1px solid #ffff;
+    padding:15px;
+    color:white;
+    border-radius: 10px;
+}
+.middle-section{
+    background-color: #fff;
+}
+.container{
+    width: 100%;
+    height:600px;
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+   line-height: 2;
+   text-align: center;
+}
+
+.container img{
+    width: 300px;
+    height:200px;
+}
+.container h3{
+    color: var(--primary-color);
+    font-size: 25px;
+}
+.container p{
+    color:var(--secondary-color);
+    font-size: 20px;
+}
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    margin:50px 100px 50px 100px;
+}
+.footer-links > .right-footer> ul{
+    display: flex;
+    list-style-type: none;
+    gap:50px;
+    color: var(--secondary-color);
+
+}
+.footer-links > .left-footer{
+    color: var(--primary-color);
+}
+.footer-links > .right-footer > ul > li > a{
+    color:#ffff;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.footer-links > .right-footer > ul > li > a:hover{
+    color: gray;
+}

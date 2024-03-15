@@ -1,0 +1,215 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    font-family: 'PT Sans', sans-serif;
+  color: #ffffff;
+  word-spacing: 5px;
+  box-sizing: border-box;
+}
+:root{
+    --background-color:
+    #0d0d0d;
+    --background-color-secondary :#f4f4f4;      
+}
+/* styles for myTunes section  */
+#bg-img{
+    background-image:url(showcase.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  position: relative;
+  overflow-y: scroll;
+}
+.navigation{
+    position: sticky;
+    top: 0px;
+}
+.navigation > ul{
+    display:flex;
+    list-style-type: none;
+    gap:30px;
+    text-decoration: none;
+    background-color: var(--background-color);
+    padding: 10px;
+}
+.navigation > ul :hover{
+    transform: translate(5px);
+    transform: scale(1.2);
+    transition: 0.1s ease-out;
+    background-color: #ffffff;
+    color: #333333;
+    padding:5px;
+    /* text-decoration: underline overline;
+    text-decoration-thickness: 5px;
+    text-decoration-color: #103063; */
+    border-radius: 50px;
+}
+.navigation > ul > li >a {
+    text-decoration: none;
+    color: white;
+}
+.navigation > ul > li > :first-child{
+    margin-left: 20px;
+}
+.myTunes{
+    text-align: center;
+    margin:100px 20px 200px 20px;
+}
+h1{
+    font-size:70px;
+    line-height: 2;
+}
+h3{
+    font-size:30px;
+    line-height: 2;
+}
+.myTunes > p{
+    font-size:20px;
+}
+/* end myTunes style here  */
+
+
+
+/* Music styles css will start from here  */
+.music-section{
+    text-align: center;
+    background-color: var(--background-color);
+}
+.music-section > p{
+    line-height:1.5;
+    font-size: 20px;
+    margin:40px;
+}
+.music-section > #trial{
+    background-color:  #d3071b;;
+    padding: 20px;
+   
+}
+/* music styles css styles end here  */
+
+
+/* Video CSS styles will add from here  */
+.video-section{
+    text-align: center;
+    background-color: var(--background-color-secondary);
+    color: #0d0d0d;
+    overflow: scroll;
+}
+.video-section > h3 {
+    line-height: 3;  
+    margin-top: 40px;
+}
+.video-section > p{
+    line-height:1.5;
+    font-size: 20px;
+    margin:20px;
+}
+.video-section > #read-more{
+    background-color: #103063;
+    color: #ffffff;
+    font-size: 15px;
+    padding:20px;
+  position: relative;
+  top:20px;
+}
+/* video section css styles end here  */
+
+
+/* Entertainment section start here  */
+#entertainment-section{
+    text-align: center;
+    background-image: url(star.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width:100%;
+    height:40vw;
+    overflow: scroll;
+}
+.entertain > h3 {
+    margin : 150px 20px auto;
+    line-height: 3;
+   
+} 
+.entertain >p {
+    line-height:1.5;
+    font-size: 20px;
+    margin:40px;
+}
+/* Entertainment section end here  */
+
+/* Gift card section end here  */
+#GiftCards{
+    background-color: var(--background-color-secondary);
+    color: #0d0d0d;
+}
+.image > img {
+    width:450px;
+    height:300px;
+    margin: 50px;
+}
+.image-text{
+    display: flex;
+}
+.text > p {
+    line-height:1.3;
+    font-size: 20px;
+    margin:40px;
+}
+.text > hr{
+    margin :0px 40px;
+}
+/* end gift css styles here */
+
+/* footer css styles start from here  */
+#footer{
+    background-color: var(--background-color);
+    overflow: scroll;
+}
+.footer-section{
+    margin: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* gap:150px; */
+}
+/* .footer-section hr{
+    width:500px;
+} */
+.footer-section h3{
+    font-size: 20px;
+
+    /* this will select all h3 that are present in the child divs */
+}
+.footer-section > .one-footer > ul> li , .two-footer > ul > li ,.third-footer > ul> li , .fourth-footer > ul> li{
+    list-style-type: none;
+   padding: 5px;
+}
+#copyright{
+    text-align: center;
+    background-color:#333333;
+    font-size: 18px;
+    line-height: 3;
+}
+/* footer css styles end here  */
+
+
+/* Media Query for Responsive Layout */
+@media only screen and (max-width: 768px), only screen and (max-height: 600px) {
+    .navigation ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .footer-section {
+        display: block;
+    }
+
+    .footer-section .one-footer, .footer-section .two-footer, .footer-section .third-footer, .footer-section .fourth-footer {
+        margin-bottom: 20px;
+        flex-basis: 100%;
+    }
+}
